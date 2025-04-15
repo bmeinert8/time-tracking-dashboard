@@ -12,6 +12,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <main class="main-container">
+    <section id="profile-section" aria-labelledby="profile-heading">
+      <div class="profile-info">
+        <header class="profile-header">
+          <img class="profile-picture" src="./images/image-jeremy.png" alt="Jeremy Robinson">
+          <div class="text-group">
+            <h1 id="profile-heading" class="text-preset-4">
+              <span class="profile-title text-preset-6">Report for</span>
+              <span class="profile-name">Jeremy Robinson</span>
+            </h1>
+          </div>
+        </header> 
+      </div>
+      <nav class="nav-menu" aria-label="Timeframe selection" role="group">
+        <button class="nav-btn text-preset-5">Daily</button>
+        <button class="nav-btn text-preset-5 active" aria-active="true">Weekly</button>
+        <button class="nav-btn text-preset-5">Monthly</button>
+      </nav>
+    </section>
+  </main>
   <script src="./main.js" defer></script>
 </body>
 </html>

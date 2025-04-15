@@ -162,3 +162,95 @@ body {
   line-height: 18px;
   letter-spacing: 0px;
 }
+
+
+
+
+
+
+/* GENERAL STYLING */
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background-color: var(--Navy950);
+}
+
+
+
+
+
+/* PROFILE SECTION */
+#profile-section {
+  background-color: var(--Navy900);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.profile-info {
+  background-color: var(--Purple600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  
+}
+
+.profile-header {
+  display: flex;
+  gap: 24px;
+  padding: 32px;
+}
+
+.profile-picture {
+  height: 64px;
+  width: 64px;
+  border: 3px solid var(--White);
+  border-radius: 50%;
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-title{
+  color: var(--Navy200);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.profile-name{
+  color: var(--White);
+}
+
+/* nav bar */
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.nav-btn {
+  color: var(--Purple500);
+  cursor: pointer;
+}
+
+.nav-btn:hover:not(.active) {
+  color: var(--Navy200)
+}
+
+.nav-btn:focus {
+  outline: 2px solid var(--Navy200);
+  outline-offset: 2px;
+}
+
+.active {
+  color: var(--White);
+}

@@ -350,3 +350,139 @@ body{
 .previous-total {
   color: var(--Navy200);
 }
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* tablet layout */
+@media (min-width: 768px) {
+  .main-container{
+    margin-top: 180px;
+    margin-bottom: 180px;
+  }
+
+  .main-container, #profile-section, .activity-cards {
+    width: 612px;
+  }
+
+  /* profile section */
+
+  .profile-info {
+    justify-content: flex-start;
+  }
+
+  .nav-menu {
+    min-width: 343px;
+    align-self: center;
+  }
+
+  /* stat cards section */
+ .activity-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px;
+ }
+
+ .card-top {
+  max-height: 33px;
+  padding: 0 12px;
+ }
+ .card-top-image {
+  height: 57.48px;
+  width: 57.48px;
+ }
+
+ .card-stats {
+  gap: 16px;
+ }
+
+ .ellipsis-icon {
+  max-width: 11.79px;
+  max-height: 3.64px;
+ }
+
+ .activity-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-start;
+ }
+
+ .time-total{
+  font-size: 56px;
+  line-height: 66px;
+ }
+}
+
+/* desktop layout */
+@media (min-width: 1440px) {
+  .main-container {
+    min-width: 1116px;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  #profile-section {
+    width: 255px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    min-height: 355px;
+    gap: 40px;
+  }
+
+  #profile-heading {
+    font-size: 40px;
+    line-height: 47px;
+    max-width: 138px;
+  }
+
+  .profile-title {
+    margin-bottom: 0px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 68px;
+    align-self: self-start;
+    margin-left: 32px;
+    gap: 24px
+  }
+
+  .stat-section-card{
+    width: 255px
+
+  }
+
+  .card-top{
+    min-height: 50px;
+  }
+
+  .card-stats {
+    padding: 32px;
+    gap: 24px;
+    position:
+  }
+
+  .activity-stats {
+    align-self: self-start;
+  }
+
+  .card-top-image {
+    height: 78px;
+    width: 78px;
+  }
+
+  .profile-picture {
+    height: 78px;
+    width: 78px
+  }
+}

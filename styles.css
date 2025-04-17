@@ -366,7 +366,7 @@ body{
   }
 
   .main-container, #profile-section, .activity-cards {
-    min-width: 612px;
+    width: 612px;
   }
 
   /* profile section */
@@ -417,4 +417,72 @@ body{
   font-size: 56px;
   line-height: 66px;
  }
+}
+
+/* desktop layout */
+@media (min-width: 1440px) {
+  .main-container {
+    min-width: 1116px;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  #profile-section {
+    width: 255px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    min-height: 355px;
+    gap: 40px;
+  }
+
+  #profile-heading {
+    font-size: 40px;
+    line-height: 47px;
+    max-width: 138px;
+  }
+
+  .profile-title {
+    margin-bottom: 0px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 68px;
+    align-self: self-start;
+    margin-left: 32px;
+    gap: 24px
+  }
+
+  .stat-section-card{
+    width: 255px
+
+  }
+
+  .card-top{
+    min-height: 50px;
+  }
+
+  .card-stats {
+    padding: 32px;
+    gap: 24px;
+    position:
+  }
+
+  .activity-stats {
+    align-self: self-start;
+  }
+
+  .card-top-image {
+    height: 78px;
+    width: 78px;
+  }
+
+  .profile-picture {
+    height: 78px;
+    width: 78px
+  }
 }

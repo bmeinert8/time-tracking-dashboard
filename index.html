@@ -12,6 +12,134 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <main class="main-container">
+
+    <!-- PROFILE CARD-->
+    <section id="profile-section" aria-labelledby="profile-heading">
+      <div class="profile-info">
+        <header class="profile-header">
+          <img class="profile-picture" src="./images/image-jeremy.png" alt="Jeremy Robinson">
+          <div class="text-group">
+            <h1 id="profile-heading" class="text-preset-4">
+              <span class="profile-title text-preset-6">Report for</span>
+              <span class="profile-name">Jeremy Robinson</span>
+            </h1>
+          </div>
+        </header> 
+      </div>
+      <nav class="nav-menu" aria-label="Timeframe selection" role="group">
+        <button class="nav-btn text-preset-5">Daily</button>
+        <button class="nav-btn text-preset-5 active" aria-current="true">Weekly</button>
+        <button class="nav-btn text-preset-5">Monthly</button>
+      </nav>
+    </section>
+
+    <!-- STATS CARDS -->
+    <section class="activity-cards" aria-labelledby="stats-heading">
+      <h2 id="stats-heading" class="visually-hidden">Time Tracking Statistics</h2>
+    <!--work card -->
+      <article id="work-card"  class="stat-section-card" data-activity="work">
+        <div class="card-top">
+          <img class="card-top-image" src="./images/icon-work.svg" alt="Work Icon">
+        </div>
+        <div class="card-stats">
+          <div class="activity-header">
+            <h3 class="activity-title text-preset-5-medium">Work</h3>
+            <img class="ellipsis-icon" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="activity-stats">
+            <p class="time-total text-preset-3">32hrs</p>
+            <p class="previous-total text-preset-6"> Last Week - 36hrs</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- play card -->
+      <article id="play-card"  class="stat-section-card" data-activity="play">
+        <div class="card-top">
+          <img class="card-top-image" src="./images/icon-play.svg" alt="Play Icon">
+        </div>
+        <div class="card-stats">
+          <div class="activity-header">
+            <h3 class="activity-title text-preset-5-medium">Play</h3>
+            <img class="ellipsis-icon" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="activity-stats">
+            <p class="time-total text-preset-3">10hrs</p>
+            <p class="previous-total text-preset-6"> Last Week - 8hrs</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- study card -->
+      <article id="study-card"  class="stat-section-card" data-activity="study">
+        <div class="card-top">
+          <img class="card-top-image" src="./images/icon-study.svg" alt="Study Icon">
+        </div>
+        <div class="card-stats">
+          <div class="activity-header">
+            <h3 class="activity-title text-preset-5-medium">Study</h3>
+            <img class="ellipsis-icon" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="activity-stats">
+            <p class="time-total text-preset-3">4hrs</p>
+            <p class="previous-total text-preset-6"> Last Week - 7hrs</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- exercise card -->
+      <article id="exercise-card"  class="stat-section-card" data-activity="exercise">
+        <div class="card-top">
+          <img class="card-top-image" src="./images/icon-exercise.svg" alt="Exercise Icon">
+        </div>
+        <div class="card-stats">
+          <div class="activity-header">
+            <h3 class="activity-title text-preset-5-medium">Exercise</h3>
+            <img class="ellipsis-icon" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="activity-stats">
+            <p class="time-total text-preset-3">4hrs</p>
+            <p class="previous-total text-preset-6"> Last Week - 5hrs</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- social card-->
+      <article id="social-card"  class="stat-section-card" data-activity="social">
+        <div class="card-top">
+          <img class="card-top-image" src="./images/icon-social.svg" alt="Social Icon">
+        </div>
+        <div class="card-stats">
+          <div class="activity-header">
+            <h3 class="activity-title text-preset-5-medium">Social</h3>
+            <img class="ellipsis-icon" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="activity-stats">
+            <p class="time-total text-preset-3">5hrs</p>
+            <p class="previous-total text-preset-6"> Last Week - 10hrs</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- self care card -->
+      <article id="self-care-card"  class="stat-section-card" data-activity="self-care">
+        <div class="card-top">
+          <img class="card-top-image" src="./images/icon-self-care.svg" alt="Self Care Icon">
+        </div>
+        <div class="card-stats">
+          <div class="activity-header">
+            <h3 class="activity-title text-preset-5-medium">Self Care</h3>
+            <img class="ellipsis-icon" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="activity-stats">
+            <p class="time-total text-preset-3">2hrs</p>
+            <p class="previous-total text-preset-6"> Last Week - 2hrs</p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
   <script src="./main.js" defer></script>
 </body>
 </html>

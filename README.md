@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - **Solution URL:** [GitHub Repository](https://github.com/bmeinert8/time-tracking-dashboard)
-- **Live Site:** [Live Demo](#)
+- **Live Site:** [Live Demo](https://bmeinert8.github.io/time-tracking-dashboard/)
 
 ## My Process
 

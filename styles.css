@@ -417,6 +417,10 @@ body{
   font-size: 56px;
   line-height: 66px;
  }
+
+ #work-card, #exercise-card {
+  max-width: 191.72px;
+ }
 }
 
 /* desktop layout */
@@ -482,6 +486,10 @@ body{
 
   .profile-picture {
     height: 78px;
-    width: 78px
+    width: 78px;
   }
+
+  #work-card, #exercise-card {
+    max-width: 255px;
+   }
 }

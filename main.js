@@ -16,6 +16,26 @@ fetchData().then((data) => {
   activityData = data;
   console.log(activityData);
   updateCards('weekly');
+
+  //add event listener for the nav buttons
+  const navButtons = document.querySelectorAll('.js-nav-btn')
+  navButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      //get the time frame data set for each button
+      const timeframe = button.dataset.timeframe;
+      updateCards(timeframe);
+      
+      //remove the active class and the aria current attribute from active button
+      navButtons.forEach((btn) => {
+        btn.classList.remove('active');
+        btn.removeAttribute('aria-current');
+      });
+
+      //add aria current and active class to active button
+      button.classList.add('active');
+      button.setAttribute('aria-current');
+    });
+  });
 });
 
 function updateCards(timeframe) {

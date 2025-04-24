@@ -402,8 +402,8 @@ body{
  }
 
  .ellipsis-icon {
-  max-width: 11.79px;
-  max-height: 3.64px;
+  width: 11.79px;
+  height: 3.64px;
  }
 
  .activity-stats {
@@ -416,6 +416,10 @@ body{
  .time-total{
   font-size: 56px;
   line-height: 66px;
+ }
+
+ #work-card, #exercise-card {
+  max-width: 191.72px;
  }
 }
 
@@ -476,12 +480,29 @@ body{
   }
 
   .card-top-image {
-    height: 78px;
-    width: 78px;
+    min-height: 78px;
+    min-width: 78px;
   }
 
   .profile-picture {
     height: 78px;
-    width: 78px
+    width: 78px;
+  }
+
+  #work-card, #exercise-card {
+    max-width: 255px;
+   }
+
+   .ellipsis-icon{
+    width: 21px;
+    height: 5px;
+   }
+
+   .card-stats:hover {
+    background-color: var(--Navy800);
+   }
+
+   .nav-btn:focus {
+    display: none;
   }
 }
